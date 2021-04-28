@@ -3,7 +3,7 @@
     <el-card class="box-card">
       <div class="time-holder">
         <div>
-          <h2>Pacific Time</h2>
+          <h2>Pacific</h2>
 
           <div class="headers">
             <p>{{ pt }}</p>
@@ -56,12 +56,13 @@ export default {
 
 .time-holder {
   display: flex;
+  flex-wrap: wrap;
 }
 .headers {
   margin-top: 20px;
 }
 .headers p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .text {
@@ -77,5 +78,17 @@ export default {
 }
 .ml-auto {
   margin-left: auto;
+}
+
+@media (max-width: 575.98px) {
+  h2 {
+    margin-top: 10px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
 }
 </style>
